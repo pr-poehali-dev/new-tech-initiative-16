@@ -691,7 +691,7 @@ export default function Index() {
       {/* Header Navigation */}
       <header className="relative z-10 flex items-center justify-between px-4 sm:px-6 py-4 lg:px-12">
         <div className="flex items-center space-x-2 pl-3 sm:pl-6 lg:pl-12">
-          <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl tracking-wider">FORMA</span>
+          <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl tracking-wider">NEBEL</span>
         </div>
 
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
