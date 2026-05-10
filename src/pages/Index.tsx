@@ -3,6 +3,7 @@ import { ArrowRight, Menu } from "lucide-react"
 import { LineShadowText } from "@/components/line-shadow-text"
 import { ShimmerButton } from "@/components/shimmer-button"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -695,9 +696,9 @@ export default function Index() {
         </div>
 
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
+          <Link to="/kitchens" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
             Кухни
-          </a>
+          </Link>
           <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
             Офисная мебель
           </a>
@@ -722,9 +723,9 @@ export default function Index() {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-white/10 z-20">
           <nav className="flex flex-col space-y-4 px-6 py-6">
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <Link to="/kitchens" className="text-white/80 hover:text-white transition-colors">
               Кухни
-            </a>
+            </Link>
             <a href="#" className="text-white/80 hover:text-white transition-colors">
               Офисная мебель
             </a>
