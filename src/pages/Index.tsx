@@ -699,12 +699,12 @@ export default function Index() {
           <Link to="/kitchens" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
             Кухни
           </Link>
-          <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
+          <Link to="/office" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
             Офисная мебель
-          </a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
+          </Link>
+          <Link to="/decor" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
             Предметы интерьера
-          </a>
+          </Link>
           <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
             Контакты
           </a>
@@ -726,12 +726,12 @@ export default function Index() {
             <Link to="/kitchens" className="text-white/80 hover:text-white transition-colors">
               Кухни
             </Link>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <Link to="/office" className="text-white/80 hover:text-white transition-colors">
               Офисная мебель
-            </a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            </Link>
+            <Link to="/decor" className="text-white/80 hover:text-white transition-colors">
               Предметы интерьера
-            </a>
+            </Link>
             <a href="#" className="text-white/80 hover:text-white transition-colors">
               Контакты
             </a>
