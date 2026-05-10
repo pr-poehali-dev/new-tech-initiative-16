@@ -690,7 +690,7 @@ export default function Index() {
       </div>
 
       {/* Header Navigation */}
-      <header className="relative z-10 flex items-center justify-between px-4 sm:px-6 py-4 lg:px-12">
+      <header className="relative z-50 flex items-center justify-between px-4 sm:px-6 py-4 lg:px-12">
         <div className="flex items-center space-x-2 pl-3 sm:pl-6 lg:pl-12">
           <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl tracking-wider">NEBEL</span>
         </div>
@@ -721,7 +721,7 @@ export default function Index() {
       </header>
 
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-white/10 z-20">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-white/10 z-50">
           <nav className="flex flex-col space-y-4 px-6 py-6">
             <Link to="/kitchens" className="text-white/80 hover:text-white transition-colors">
               Кухни
