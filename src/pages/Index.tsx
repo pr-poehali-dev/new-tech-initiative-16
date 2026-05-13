@@ -71,23 +71,13 @@ export default function Index() {
             Всё кроме обычного
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <a
-              href="#catalog"
-              className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-7 py-3 rounded-xl text-sm font-body font-medium tracking-wide flex items-center gap-2 border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105"
-            >
-              Смотреть каталог
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </a>
-
-            <a
-              href="tel:+79611541626"
-              className="group flex items-center gap-2.5 bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 hover:border-white/35 text-white px-7 py-3 rounded-xl text-sm font-body font-medium tracking-wide transition-all duration-300"
-            >
-              <Icon name="Phone" size={15} className="text-orange-400" />
-              8-961-154-16-26
-            </a>
-          </div>
+          <a
+            href="#catalog"
+            className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-7 py-3 rounded-xl text-sm font-body font-medium tracking-wide flex items-center gap-2 border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105"
+          >
+            Смотреть каталог
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+          </a>
         </main>
 
         {/* Ссылка на контакты внизу */}
