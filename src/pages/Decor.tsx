@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import Icon from "@/components/ui/icon"
+import Logo from "@/components/Logo"
 
 const DECOR_BG = "https://cdn.poehali.dev/projects/3a01b69a-2aa8-48e1-b9d9-094b47c89d39/files/19bd842c-8cc9-4af9-91fe-315af52e8af0.jpg"
 
@@ -38,7 +39,7 @@ export default function Decor() {
             <Icon name="ArrowLeft" size={18} />
             <span className="text-sm font-medium">Назад</span>
           </Link>
-          <span className="text-white font-bold text-lg tracking-wider">NEBEL</span>
+          <Logo />
           <div />
         </header>
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Icon from "@/components/ui/icon"
+import Logo from "@/components/Logo"
 
 export default function Contacts() {
   return (
@@ -10,7 +11,7 @@ export default function Contacts() {
           <Icon name="ArrowLeft" size={18} />
           <span className="text-sm font-medium">Назад</span>
         </Link>
-        <span className="text-white font-heading font-semibold text-xl tracking-[0.2em]">NEBEL</span>
+        <Logo />
         <div />
       </header>
 

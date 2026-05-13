@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import Icon from "@/components/ui/icon"
+import Logo from "@/components/Logo"
 
 const KITCHEN_BG = "https://cdn.poehali.dev/projects/3a01b69a-2aa8-48e1-b9d9-094b47c89d39/files/40aace72-a947-4201-866a-4fbd3b8a527d.jpg"
 
@@ -38,7 +39,7 @@ export default function Kitchens() {
             <Icon name="ArrowLeft" size={18} />
             <span className="text-sm font-medium">Назад</span>
           </Link>
-          <span className="text-white font-bold text-lg tracking-wider">NEBEL</span>
+          <Logo />
           <div />
         </header>
 

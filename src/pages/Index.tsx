@@ -3,6 +3,7 @@ import { ArrowRight, Menu } from "lucide-react"
 import { ShimmerButton } from "@/components/shimmer-button"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import Logo from "@/components/Logo"
 
 const HERO_BG = "https://cdn.poehali.dev/projects/3a01b69a-2aa8-48e1-b9d9-094b47c89d39/files/0a1d5ae0-b495-4a7d-9b40-a1463c5720ca.jpg"
 
@@ -24,7 +25,7 @@ export default function Index() {
       {/* Header Navigation */}
       <header className="relative z-50 flex items-center justify-between px-5 sm:px-10 lg:px-16 py-5">
         <div className="flex items-center pl-1">
-          <span className="text-white font-heading font-semibold text-2xl sm:text-3xl tracking-[0.2em]">NEBEL</span>
+          <Logo />
         </div>
 
         <nav className="hidden md:flex items-center space-x-7 lg:space-x-10">
