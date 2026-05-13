@@ -57,6 +57,23 @@ export default function Contacts() {
           </a>
         </div>
 
+        {/* Реквизиты */}
+        <Link
+          to="/requisites"
+          className="group flex items-center justify-between bg-white/5 border border-white/10 hover:border-orange-500/40 rounded-2xl p-6 transition-colors duration-300 mt-5"
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-11 h-11 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/25 transition-colors">
+              <Icon name="FileText" size={20} className="text-orange-400" />
+            </div>
+            <div>
+              <p className="text-white/40 text-xs tracking-widest uppercase mb-1">Документы</p>
+              <p className="text-white text-base font-medium">Реквизиты ИП</p>
+            </div>
+          </div>
+          <Icon name="ChevronRight" size={18} className="text-white/30 group-hover:text-orange-400 transition-colors" />
+        </Link>
+
         {/* Часы работы */}
         <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-6">
           <div className="flex items-center gap-3 mb-4">
