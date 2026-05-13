@@ -163,6 +163,88 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* Преимущества */}
+      <section className="bg-black px-5 sm:px-10 lg:px-16 pb-16 sm:pb-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="border-t border-white/10 pt-16 sm:pt-24">
+            <p className="text-orange-400 text-xs font-medium tracking-widest uppercase mb-4">Почему мы</p>
+            <h2 className="font-heading font-semibold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-12">
+              Выбирают NEBEL'
+            </h2>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+              {[
+                { icon: "Ruler", title: "Точность до миллиметра", desc: "Производим мебель строго по замерам. Никаких зазоров и подгонок на месте." },
+                { icon: "Award", title: "8 лет на рынке", desc: "Сотни реализованных проектов в Ярославле и области. Работаем с частными клиентами и бизнесом." },
+                { icon: "Layers", title: "Любые материалы", desc: "Кварц, натуральный камень, HPL, дерево, металл — воплощаем любые решения." },
+                { icon: "Clock", title: "Соблюдаем сроки", desc: "Фиксируем дату сдачи в договоре и строго её придерживаемся." },
+                { icon: "Wrench", title: "Под ключ", desc: "Замер, проект, производство, доставка и монтаж — всё включено в стоимость." },
+                { icon: "HeartHandshake", title: "Гарантия 2 года", desc: "На всю мебель собственного производства. Бесплатный выезд мастера при гарантийном случае." },
+              ].map((item) => (
+                <div key={item.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col gap-4">
+                  <div className="w-11 h-11 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0">
+                    <Icon name={item.icon} size={20} className="text-orange-400" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">{item.title}</p>
+                    <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Этапы работы */}
+      <section className="bg-black px-5 sm:px-10 lg:px-16 pb-20 sm:pb-32">
+        <div className="max-w-6xl mx-auto">
+          <div className="border-t border-white/10 pt-16 sm:pt-24">
+            <p className="text-orange-400 text-xs font-medium tracking-widest uppercase mb-4">Процесс</p>
+            <h2 className="font-heading font-semibold text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-12">
+              Как мы работаем
+            </h2>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+              {[
+                { num: "01", icon: "MapPin", title: "Замер", desc: "Приезжаем к вам, снимаем точные размеры и обсуждаем пожелания." },
+                { num: "02", icon: "PenLine", title: "Проект", desc: "Разрабатываем 3D-визуализацию и согласовываем с вами каждую деталь." },
+                { num: "03", icon: "Factory", title: "Производство", desc: "Изготавливаем на собственном производстве из выбранных материалов." },
+                { num: "04", icon: "CheckCheck", title: "Монтаж", desc: "Доставляем и устанавливаем. Убираем за собой. Сдаём под ключ." },
+              ].map((step) => (
+                <div key={step.num} className="relative flex flex-col gap-5 bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <span className="font-heading text-5xl font-semibold text-white/8 leading-none select-none absolute top-4 right-5">
+                    {step.num}
+                  </span>
+                  <div className="w-11 h-11 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0">
+                    <Icon name={step.icon} size={20} className="text-orange-400" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold mb-2">{step.title}</p>
+                    <p className="text-white/50 text-sm leading-relaxed">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 bg-gradient-to-r from-orange-500/10 to-orange-600/5 border border-orange-500/20 rounded-2xl p-6 sm:p-8">
+              <div className="flex-1">
+                <p className="text-white font-heading font-semibold text-xl sm:text-2xl mb-1">Готовы начать?</p>
+                <p className="text-white/50 text-sm">Оставьте заявку — перезвоним в течение часа и обсудим ваш проект.</p>
+              </div>
+              <Link
+                to="/contacts"
+                className="group flex-shrink-0 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-7 py-3.5 rounded-xl text-sm font-medium tracking-wide flex items-center gap-2 transition-all duration-300 shadow-lg shadow-orange-500/25 hover:scale-105"
+              >
+                Связаться с нами
+                <Icon name="ArrowRight" size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
