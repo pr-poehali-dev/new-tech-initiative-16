@@ -37,9 +37,9 @@ export default function Index() {
           <Link to="/decor" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
             Предметы интерьера
           </Link>
-          <a href="#" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
+          <Link to="/contacts" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
             Контакты
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile menu button */}
@@ -64,9 +64,9 @@ export default function Index() {
             <Link to="/decor" className="text-white/80 hover:text-white transition-colors tracking-wide">
               Предметы интерьера
             </Link>
-            <a href="#" className="text-white/80 hover:text-white transition-colors tracking-wide">
+            <Link to="/contacts" className="text-white/80 hover:text-white transition-colors tracking-wide">
               Контакты
-            </a>
+            </Link>
             <ShimmerButton className="text-white px-6 py-2.5 rounded-xl text-sm font-medium shadow-lg w-fit">
               Каталог
             </ShimmerButton>
