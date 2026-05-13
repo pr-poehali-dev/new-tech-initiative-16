@@ -24,7 +24,7 @@ export default function Contacts() {
         <div className="grid sm:grid-cols-2 gap-5">
           {/* Телефон */}
           <a
-            href="tel:+79622009841"
+            href="tel:+79611541626"
             className="group flex items-start gap-4 bg-white/5 border border-white/10 hover:border-orange-500/40 rounded-2xl p-6 transition-colors duration-300"
           >
             <div className="w-11 h-11 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/25 transition-colors">
@@ -32,7 +32,7 @@ export default function Contacts() {
             </div>
             <div>
               <p className="text-white/40 text-xs tracking-widest uppercase mb-1.5">Телефон</p>
-              <p className="text-white text-lg font-medium">8-962-200-98-41</p>
+              <p className="text-white text-lg font-medium">8-961-154-16-26</p>
               <p className="text-white/40 text-sm mt-1">Звонок бесплатный</p>
             </div>
           </a>
