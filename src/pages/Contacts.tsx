@@ -67,11 +67,11 @@ export default function Contacts() {
           <div className="grid sm:grid-cols-2 gap-3 text-sm">
             <div className="flex justify-between gap-6">
               <span className="text-white/50">Пн — Пт</span>
-              <span className="text-white font-medium">10:00 — 20:00</span>
+              <span className="text-white font-medium">10:00 — 19:00</span>
             </div>
             <div className="flex justify-between gap-6">
               <span className="text-white/50">Сб — Вс</span>
-              <span className="text-white font-medium">11:00 — 19:00</span>
+              <span className="text-white font-medium">11:00 — 18:00</span>
             </div>
           </div>
         </div>
