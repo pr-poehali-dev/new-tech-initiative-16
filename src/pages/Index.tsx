@@ -38,6 +38,9 @@ export default function Index() {
           <Link to="/decor" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
             Предметы интерьера
           </Link>
+          <Link to="/hotels" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
+            Гостиницы и санатории
+          </Link>
           <Link to="/contacts" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
             Контакты
           </Link>
@@ -64,6 +67,9 @@ export default function Index() {
             </Link>
             <Link to="/decor" className="text-white/80 hover:text-white transition-colors tracking-wide">
               Предметы интерьера
+            </Link>
+            <Link to="/hotels" className="text-white/80 hover:text-white transition-colors tracking-wide">
+              Гостиницы и санатории
             </Link>
             <Link to="/contacts" className="text-white/80 hover:text-white transition-colors tracking-wide">
               Контакты
