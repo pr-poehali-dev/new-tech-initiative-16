@@ -17,7 +17,7 @@ export default function Contacts() {
 
       <main className="px-5 sm:px-10 lg:px-16 py-14 sm:py-20 max-w-4xl mx-auto">
         <p className="text-orange-400 text-xs font-medium tracking-widest uppercase mb-4">Контакты</p>
-        <h1 className="font-heading font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-14">
+        <h1 className="font-heading font-semibold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] mb-14">
           Свяжитесь с нами
         </h1>
 
