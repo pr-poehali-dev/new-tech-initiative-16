@@ -13,6 +13,15 @@ const materials = [
   "Пластик на основе МДФ",
 ]
 
+const facades = [
+  "Массив дерева",
+  "Шпон дерева",
+  "Натуральный каменный шпон",
+  "Пластик",
+  "Эмаль",
+  "Премиальные плёнки",
+]
+
 export default function Kitchens() {
   const [form, setForm] = useState({ name: "", phone: "", comment: "" })
   const [sent, setSent] = useState(false)
@@ -69,22 +78,39 @@ export default function Kitchens() {
             </p>
           </div>
 
-          <div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-4 text-white/90">Столешницы из любых материалов</h3>
-            <div className="grid grid-cols-2 gap-2 sm:gap-3">
-              {materials.map((m) => (
-                <div
-                  key={m}
-                  className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-3 sm:px-4 py-3"
-                >
-                  <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
-                  <span className="text-white/80 text-sm">{m}</span>
-                </div>
-              ))}
+          <div className="flex flex-col gap-8">
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-white/90">Столешницы</h3>
+              <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                {materials.map((m) => (
+                  <div
+                    key={m}
+                    className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-3 sm:px-4 py-3"
+                  >
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
+                    <span className="text-white/80 text-sm">{m}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-            <p className="text-white/40 text-sm mt-3">
-              Другие материалы — по запросу.
-            </p>
+
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-white/90">Фасады</h3>
+              <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                {facades.map((f) => (
+                  <div
+                    key={f}
+                    className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-3 sm:px-4 py-3"
+                  >
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
+                    <span className="text-white/80 text-sm">{f}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-white/40 text-sm mt-3">
+                Другие материалы — по запросу.
+              </p>
+            </div>
           </div>
         </div>
       </div>
