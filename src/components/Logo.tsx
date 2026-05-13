@@ -17,7 +17,7 @@ export default function Logo({ className = "" }: LogoProps) {
           filter: "drop-shadow(0 1px 2px rgba(180,130,40,0.3))",
         }}
       >
-        НЕБЕЛЬ
+        NEBEL'
       </span>
     </Link>
   )
