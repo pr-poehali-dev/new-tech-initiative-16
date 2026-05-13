@@ -7,11 +7,10 @@ const KITCHEN_BG = "https://cdn.poehali.dev/projects/3a01b69a-2aa8-48e1-b9d9-094
 
 const materials = [
   "Кварц",
-  "Компакт-плита",
   "HPL-пластик",
-  "Натуральный камень",
-  "Керамогранит",
-  "Нержавеющая сталь",
+  "Акриловый камень",
+  "Пластик на основе ДСП",
+  "Пластик на основе МДФ",
 ]
 
 export default function Kitchens() {
@@ -84,7 +83,7 @@ export default function Kitchens() {
               ))}
             </div>
             <p className="text-white/40 text-sm mt-3">
-              А также: дерево, шпон, акрил, стекло и другие материалы по запросу.
+              Другие материалы — по запросу.
             </p>
           </div>
         </div>
