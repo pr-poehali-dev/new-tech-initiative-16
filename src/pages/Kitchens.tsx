@@ -111,6 +111,24 @@ export default function Kitchens() {
                 Другие материалы — по запросу.
               </p>
             </div>
+
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white/90">Фурнитура</h3>
+              <p className="text-white/50 text-sm leading-relaxed mb-4">
+                Используем фурнитуру ведущих российских, европейских и китайских производителей.
+              </p>
+              <div className="grid grid-cols-2 gap-2 sm:gap-3">
+                {["Blum", "Hettich", "Makmart", "Puls"].map((brand) => (
+                  <div
+                    key={brand}
+                    className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-3 sm:px-4 py-3"
+                  >
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" />
+                    <span className="text-white/80 text-sm font-medium">{brand}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
