@@ -1,8 +1,5 @@
-import { ArrowRight, Menu } from "lucide-react"
-import { ShimmerButton } from "@/components/shimmer-button"
-import { useState } from "react"
+import { ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
-import Logo from "@/components/Logo"
 import Icon from "@/components/ui/icon"
 
 const HERO_BG = "https://cdn.poehali.dev/projects/3a01b69a-2aa8-48e1-b9d9-094b47c89d39/files/0a1d5ae0-b495-4a7d-9b40-a1463c5720ca.jpg"
@@ -35,8 +32,6 @@ const catalog = [
 ]
 
 export default function Index() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <div className="bg-black font-body">
       {/* Hero */}
@@ -47,82 +42,50 @@ export default function Index() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${HERO_BG})` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         </div>
 
-        {/* Header Navigation */}
-        <header className="relative z-50 flex items-center justify-between px-5 sm:px-10 lg:px-16 py-5">
-          <div className="flex items-center pl-1">
-            <Logo />
-          </div>
+        {/* Main Content — по центру */}
+        <main className="relative z-10 flex flex-col items-center justify-center flex-1 text-center px-6">
+          {/* Логотип с переливающимся золотым */}
+          <style>{`
+            @keyframes gold-shimmer {
+              0% { background-position: -200% center; }
+              100% { background-position: 200% center; }
+            }
+            .logo-shimmer {
+              background: linear-gradient(90deg, #a07830 0%, #c9a84c 20%, #f5e070 40%, #ffe090 50%, #f0d060 60%, #c9a84c 80%, #a07830 100%);
+              background-size: 200% auto;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              animation: gold-shimmer 4s linear infinite;
+            }
+          `}</style>
 
-          <nav className="hidden md:flex items-center space-x-7 lg:space-x-10">
-            <Link to="/kitchens" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
-              Кухни
-            </Link>
-            <Link to="/office" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
-              Офисная мебель
-            </Link>
-            <Link to="/decor" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
-              Предметы интерьера
-            </Link>
-            <Link to="/hotels" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
-              Гостиницы и санатории
-            </Link>
-            <Link to="/contacts" className="text-white/75 hover:text-white transition-colors text-sm tracking-wide font-body">
-              Контакты
-            </Link>
-          </nav>
+          <span className="logo-shimmer font-heading font-semibold text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.15em] select-none mb-4">
+            NEBEL'
+          </span>
 
-          <button className="md:hidden text-white p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            <Menu className="w-6 h-6" />
-          </button>
-
-          <ShimmerButton className="hidden md:flex text-white px-5 lg:px-7 py-2 rounded-xl text-sm font-body tracking-wide font-medium shadow-lg">
-            Каталог
-          </ShimmerButton>
-        </header>
-
-        {mobileMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-white/10 z-50">
-            <nav className="flex flex-col space-y-4 px-6 py-6 font-body">
-              <Link to="/kitchens" className="text-white/80 hover:text-white transition-colors tracking-wide">Кухни</Link>
-              <Link to="/office" className="text-white/80 hover:text-white transition-colors tracking-wide">Офисная мебель</Link>
-              <Link to="/decor" className="text-white/80 hover:text-white transition-colors tracking-wide">Предметы интерьера</Link>
-              <Link to="/hotels" className="text-white/80 hover:text-white transition-colors tracking-wide">Гостиницы и санатории</Link>
-              <Link to="/contacts" className="text-white/80 hover:text-white transition-colors tracking-wide">Контакты</Link>
-              <ShimmerButton className="text-white px-6 py-2.5 rounded-xl text-sm font-medium shadow-lg w-fit">
-                Каталог
-              </ShimmerButton>
-            </nav>
-          </div>
-        )}
-
-        {/* Main Content */}
-        <main className="relative z-10 flex flex-col items-start justify-center flex-1 px-6 sm:px-12 lg:px-20">
-          <div className="mb-6">
-            <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
-              <span className="text-white/90 text-xs tracking-widest uppercase font-body">Авторская дизайнерская мебель</span>
-            </div>
-          </div>
-
-          <h1 className="text-white font-heading font-semibold text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[1.05] mb-6 sm:mb-7">
-            Мебель,<br />которая говорит<br />о вашем вкусе
-          </h1>
-
-          <p className="text-white/65 text-base sm:text-lg font-body font-light mb-8 max-w-md leading-relaxed">
-            Уникальные кухни, офисные пространства и предметы интерьера — каждый предмет создаётся индивидуально под вас.
+          <p className="text-white/50 text-sm sm:text-base tracking-[0.3em] uppercase font-body font-light mb-10">
+            Всё кроме обычного
           </p>
 
           <a
             href="#catalog"
-            className="group relative bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-7 py-3 rounded-xl text-sm font-body font-medium tracking-wide flex items-center gap-2 border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5"
+            className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-7 py-3 rounded-xl text-sm font-body font-medium tracking-wide flex items-center gap-2 border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105"
           >
             Смотреть каталог
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </main>
+
+        {/* Ссылка на контакты внизу */}
+        <div className="relative z-10 flex justify-end px-6 sm:px-10 lg:px-16 pb-6">
+          <Link to="/contacts" className="text-white/40 hover:text-white/70 text-xs tracking-widest uppercase transition-colors">
+            Контакты
+          </Link>
+        </div>
       </div>
 
       {/* Каталог */}
