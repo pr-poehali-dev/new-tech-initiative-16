@@ -45,8 +45,8 @@ export default function Index() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         </div>
 
-        {/* Main Content — по центру */}
-        <main className="relative z-10 flex flex-col items-center justify-center flex-1 text-center px-6">
+        {/* Main Content — сверху */}
+        <main className="relative z-10 flex flex-col items-center text-center px-6 pt-12 sm:pt-16">
           {/* Логотип с переливающимся золотым */}
           <style>{`
             @keyframes gold-shimmer {
