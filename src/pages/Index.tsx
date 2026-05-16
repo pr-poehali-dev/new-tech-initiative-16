@@ -70,13 +70,7 @@ export default function Index() {
             Всё кроме обычного
           </p>
 
-          <a
-            href="#catalog"
-            className="group bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-7 py-3 rounded-xl text-sm font-body font-medium tracking-wide flex items-center gap-2 border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105"
-          >
-            Смотреть каталог
-            <Icon name="ArrowRight" size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-          </a>
+
         </main>
 
         {/* Ссылка на контакты внизу */}
