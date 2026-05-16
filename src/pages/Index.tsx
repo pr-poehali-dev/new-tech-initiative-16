@@ -47,22 +47,7 @@ export default function Index() {
         {/* Main Content — сверху */}
         <main className="relative z-10 flex flex-col items-center text-center px-6 pt-12 sm:pt-16">
           {/* Логотип с переливающимся золотым */}
-          <style>{`
-            @keyframes gold-shimmer {
-              0% { background-position: -200% center; }
-              100% { background-position: 200% center; }
-            }
-            .logo-shimmer {
-              background: linear-gradient(90deg, #a07830 0%, #c9a84c 20%, #f5e070 40%, #ffe090 50%, #f0d060 60%, #c9a84c 80%, #a07830 100%);
-              background-size: 200% auto;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              animation: gold-shimmer 4s linear infinite;
-            }
-          `}</style>
-
-          <span className="logo-shimmer font-heading font-semibold text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.15em] select-none mb-4">
+          <span className="text-white font-heading font-semibold text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.15em] select-none mb-4">
             NEBEL'
           </span>
 
