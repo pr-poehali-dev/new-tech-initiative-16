@@ -74,7 +74,7 @@ export default function Index() {
         </main>
 
         {/* Ссылка на контакты внизу */}
-        <div className="relative z-10 flex justify-end px-6 sm:px-10 lg:px-16 pb-6">
+        <div className="relative z-10 flex justify-end px-6 sm:px-10 lg:px-16 pb-10 mt-auto">
           <Link to="/contacts" className="text-white/70 hover:text-white text-base sm:text-lg tracking-widest uppercase font-body font-medium transition-colors">
             Контакты
           </Link>
