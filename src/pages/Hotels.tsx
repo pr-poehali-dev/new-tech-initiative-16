@@ -90,6 +90,73 @@ export default function Hotels() {
         </div>
       </div>
 
+      {/* Команда дизайнеров */}
+      <div className="px-5 sm:px-10 lg:px-16 pb-12 sm:pb-20 max-w-6xl mx-auto">
+        <div className="mb-8 sm:mb-12">
+          <p className="text-orange-400 text-xs sm:text-sm font-medium tracking-widest uppercase mb-3">Наша команда</p>
+          <h2 className="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl leading-tight">
+            Дизайнеры, которые<br />работают над вашим проектом
+          </h2>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+          {/* Дарья */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden group hover:border-orange-500/30 transition-colors duration-300">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/3a01b69a-2aa8-48e1-b9d9-094b47c89d39/bucket/d973178e-b646-4945-b9c7-a55594f10a3d.jpg"
+                alt="Дарья"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-6 sm:p-8">
+              <h3 className="font-heading font-semibold text-xl sm:text-2xl mb-1">Дарья</h3>
+              <p className="text-orange-400 text-sm font-medium mb-4">Ведущий дизайнер интерьеров</p>
+              <ul className="flex flex-col gap-2.5">
+                {[
+                  "Безупречное чувство стиля и пространства",
+                  "Специализация на гостиничных и SPA-проектах",
+                  "Умеет совмещать эстетику с практичностью",
+                  "Более 50 реализованных объектов под ключ",
+                ].map((q) => (
+                  <li key={q} className="flex items-start gap-2.5 text-white/65 text-sm leading-snug">
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0 mt-1.5" />
+                    {q}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Евгения */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden group hover:border-orange-500/30 transition-colors duration-300">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/3a01b69a-2aa8-48e1-b9d9-094b47c89d39/bucket/a6da52e8-ac74-4970-bd91-d71e1df4632b.jpg"
+                alt="Евгения"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-6 sm:p-8">
+              <h3 className="font-heading font-semibold text-xl sm:text-2xl mb-1">Евгения</h3>
+              <p className="text-orange-400 text-sm font-medium mb-4">Дизайнер-технолог</p>
+              <ul className="flex flex-col gap-2.5">
+                {[
+                  "Глубокое знание материалов и технологий производства",
+                  "Проектирует мебель с учётом износостойкости",
+                  "Опыт в санаторных и медицинских зонах",
+                  "Всегда находит нестандартные решения в сложных планировках",
+                ].map((q) => (
+                  <li key={q} className="flex items-start gap-2.5 text-white/65 text-sm leading-snug">
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0 mt-1.5" />
+                    {q}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Форма обратной связи */}
       <div className="px-5 sm:px-10 lg:px-16 pb-16 sm:pb-24 max-w-6xl mx-auto">
         <div className="bg-white/5 border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12">
